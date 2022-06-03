@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %} Onze kamers{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Chiels Kamers</h1>
+            <p class="fs-5 text-muted">
+                Onze kamers zijn geweldig, hoe meer u betaald hoe meer u krijgt. Top deal toch!
+            </p>
+        </div>
+        {% for room in rooms %}
+            <p>
+            {{ dump(room) }}
+            </p>
+        {%  endfor %}
+    </main>
+{% endblock %}
+
+
